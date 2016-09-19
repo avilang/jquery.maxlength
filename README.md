@@ -3,3 +3,4 @@
 
 # 相关连接
 <https://remysharp.com/2008/06/30/maxlength-plugin>
+<https://github.com/kbwood/maxlength>
