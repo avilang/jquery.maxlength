@@ -1,0 +1,20 @@
+{
+  "name": "jquery.maxlength",
+  "version": "0.0.1",
+  "description": "表单元素字符数输入限制",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sk-blog/jquery.maxlength.git"
+  },
+  "author": "sk-blog",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sk-blog/jquery.maxlength/issues"
+  },
+  "homepage": "https://github.com/sk-blog/jquery.maxlength#readme",
+  "devDependencies": {
+    "del": "^2.2.2",
+    "gulp": "^3.9.1",
+    "gulp-uglify": "^2.0.0"
+  }
+}

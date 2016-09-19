@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>jquery.maxlength</title>
+  <script type="text/javascript" src="jquery-1.12.4.js"></script>
+  <!-- <script type="text/javascript" src="../jquery.maxlength.js"></script> -->
+  <script type="text/javascript" src="../dist/jquery.maxlength.js"></script>
+</head>
+<body>
+
+<form action="/comment">
+  <p>还能输入：<span class="charsLeft">3</span></p>
+  <input class="limited"></input>
+  <input type="hidden" name="maxlength" value="3">
+</form>
+
+<div class="dd">
+  <p>还能输入：<span class="charsLeft">5</span></p>
+  <textarea maxlength="5" class="limited"></textarea>
+</div>
+
+<form action="/comment">
+  <p>还能输入：<span class="charsLeft-b"></span></p>
+  <input maxlength="3" class="limited-b"></input>
+</form>
+
+<script type="text/javascript">
+  $('input.limited').maxlength({
+    'feedback' : '.charsLeft',
+    'hardLimit' : true,
+    'useInput' : true
+  });
+
+  $('textarea.limited').maxlength({
+    'feedback' : '.charsLeft',
+    'hardLimit' : true,
+    'form' : '.dd'
+  });
+
+  $('input.limited-b').maxlength('.charsLeft-b');
+</script>
+
+</body>
+</html>
